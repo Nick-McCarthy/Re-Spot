@@ -1,6 +1,4 @@
 import React from 'react';
-import "./commentList.css";
-
 
 const CommentList = ({ comments = [] }) => {
   if (!comments.length) {

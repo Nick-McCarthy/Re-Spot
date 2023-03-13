@@ -11,6 +11,7 @@ import './Signup.css'
 const Signup = () => {
   const [formState, setFormState] = useState({
     username: '',
+    spotUser:'',
     email: '',
     password: '',
   });
@@ -63,6 +64,14 @@ const Signup = () => {
                   style= {{
                     backgroundColor:'#92e6a7',
                  }}
+                />
+                <input
+                  className="form-input"
+                  placeholder="Your Spotify username"
+                  name="spotUser"
+                  type="text"
+                  value={formState.spotUser}
+                  onChange={handleChange}
                 />
                 <input
                   className="form-input"

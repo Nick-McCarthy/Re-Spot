@@ -8,6 +8,12 @@ const userSchema = new Schema({
     unique: true,
     trim: true,
   },
+  spotUser: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true,
+    },
   email: {
     type: String,
     required: true,

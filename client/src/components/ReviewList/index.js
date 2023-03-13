@@ -9,10 +9,11 @@ import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
 
 
 const ReviewList = ({
-  reviews,
+  // reviews,
   title,
   showTitle = true,
   showUsername = true,
+  reviews = []
 }) => {
 
 
@@ -102,7 +103,7 @@ const ReviewList = ({
           </div>
         ))}
     </div>
-  );
+    );
 };
 
 export default ReviewList;

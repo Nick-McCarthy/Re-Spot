@@ -9,6 +9,10 @@ const reviewSchema = new Schema({
     maxlength: 280,
     trim: true,
   },
+  uri: {
+    type: String,
+    
+  },
   reviewAuthor: {
     type: String,
     required: true,

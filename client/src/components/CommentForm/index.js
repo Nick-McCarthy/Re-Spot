@@ -5,6 +5,7 @@ import { useMutation } from '@apollo/client';
 import { ADD_COMMENT } from '../../utils/mutations';
 
 import Auth from '../../utils/auth';
+import "./commentForm.css";
 
 const CommentForm = ({ reviewId }) => {
   const [commentText, setCommentText] = useState('');
@@ -40,7 +41,7 @@ const CommentForm = ({ reviewId }) => {
   };
 
   return (
-    <div>
+    <div className="ughhh">
       <h4>What do you think about this?</h4>
 
       {Auth.loggedIn() ? (

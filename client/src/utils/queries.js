@@ -5,6 +5,7 @@ export const QUERY_USER = gql`
     user(username: $username) {
       _id
       username
+      spotUser
       email
       reviews {
         _id
@@ -48,6 +49,7 @@ export const QUERY_ME = gql`
     me {
       _id
       username
+      spotUser
       email
       reviews {
         _id

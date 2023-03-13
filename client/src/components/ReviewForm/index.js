@@ -10,6 +10,8 @@ import Auth from '../../utils/auth';
 import './ReviewForm.css';
 
 const ReviewForm = () => {
+  console.log({reviewId: prop?.reviewId})
+
   const [reviewText, setReviewText] = useState('');
 
   const [characterCount, setCharacterCount] = useState(0);
@@ -71,7 +73,7 @@ const ReviewForm = () => {
             className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
               }`}
           >
-            Character Count: {characterCount}/280
+            Character Count: {characterCount}/280 
           </p>
           <form
             className="flex-row justify-center justify-space-between-md align-center"
