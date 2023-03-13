@@ -10,7 +10,7 @@ const search = async (spotUser) => {
             'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
         },
         params: {
-            id: `${spotUser}`, playlistLimit: '10', artistLimit: '10'
+            id: `${spotUser}`, playlistLimit: '3', artistLimit: '10'
         },
     })
 }
